@@ -1,0 +1,11 @@
+import random
+def password(len_pass=6):
+    password=""
+    symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    for symb in range(len_pass):
+        password+=random.choice(symbols)
+    return password
+len_password=int(input("сколько символов будет в пароле?"))
+print(password(len_password))
+
+
